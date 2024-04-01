@@ -1,0 +1,49 @@
+/* CSS */
+.burger-menu {
+    display: block;
+    width: 30px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .burger-menu .bar {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    position: absolute;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .burger-menu .bar::before,
+  .burger-menu .bar::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    position: absolute;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .burger-menu .bar::before {
+    top: -8px;
+  }
+  
+  .burger-menu .bar::after {
+    bottom: -8px;
+  }
+  
+  .burger-menu.open .bar {
+    transform: translateY(8px) rotate(45deg);
+  }
+  
+  .burger-menu.open .bar::before {
+    transform: translateY(0) rotate(45deg);
+  }
+  
+  .burger-menu.open .bar::after {
+    transform: translateY(0) rotate(-45deg);
+  }
+  

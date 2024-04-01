@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "DMSans-Regular";
+  src: url("DMSans-Regular"),
+  url('./assets/fonts/DMSans-Regular.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: "DMSans-Medium";
+  src: url("DMSans-Medium"),
+  url('./assets/fonts/DMSans-Medium.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: "DMSans-Bold";
+  src: url("DMSans-Bold"),
+  url('./assets/fonts/DMSans-Bold.ttf') format("truetype");
+}
+
+@layer base {
+  html{
+    @apply font-primaryRegular max-w-[100vw] overflow-x-hidden;
+  }
+  .h1 {
+    @apply font-primaryBold text-5xl sm:text-5xl font-black mb-5 sm:mb-4 !leading-tight;
+  }
+  .h2 {
+    @apply text-3xl sm:text-4xl font-primaryBold mb-3;
+  }
+  .h3 {
+    @apply text-2xl font-primaryBold mb-5 mt-4;
+  }
+  .h4 {
+    @apply text-lg font-primaryBold mt-2;
+  }
+  .h5 {
+    @apply text-base font-primaryBold mt-2;
+  }
+  section{
+    @apply py-5 md:py-14 px-4 xl:px-0;
+  }
+  body section:first-of-type{
+    @apply pt-0;
+  }
+  body section:last-of-type{
+    @apply pb-32;
+  }
+  p{
+    @apply text-base md:text-lg;
+  }
+  .content p{
+    @apply mb-5;
+  }
+  .content p:last-of-type{
+    @apply mb-0;
+  }
+  .container{
+    @apply 2xl:!max-w-[1280px];
+  }
+}
+
+@layer components {
+  /* BUTTON COMPONENT */
+  .btn {
+    @apply font-primaryBold flex flex-col items-center text-center rounded-full w-fit cursor-pointer select-none duration-200;
+  }
+  .btn:hover{
+    @apply bg-primary;
+  }
+  .btn-cta {
+    @apply text-xl py-3 px-7;
+  }
+  .btn-info {
+    @apply py-2 px-6;
+  }
+  .btn-orange{
+    @apply bg-orange text-white;
+  }
+  .link{
+    @apply inline-block relative z-10 px-[2px] before:-z-[1] before:w-full before:h-[3px] before:bg-orange before:absolute before:left-0 before:right-0 before:bottom-0 before:duration-200;
+  }
+  .link:hover{
+    @apply before:h-full;
+  }
+}
+
+/* CSS BURGER */
+#burger-menu {
+  cursor: pointer;
+  height: 27px;
+  width: 27px;
+  overflow: visible;
+  position: relative;
+  z-index:2;
+}
+#burger-menu span,
+#burger-menu span:before,
+#burger-menu span:after {
+  background: #273444;
+  display: block;
+  height: 2px;
+  opacity: 1;
+  position: absolute;
+  transition: 0.3s ease-in-out;
+}
+#burger-menu span:before,
+#burger-menu span:after {
+  content: "";
+}
+#burger-menu span {
+  right: 0px;
+  top: 13px;
+  width: 27px;
+}
+#burger-menu span:before {
+  left: 0px;
+  top: -10px;
+  width: 16px;
+}
+#burger-menu span:after {
+  left: 0px;
+  top: 10px;
+  width: 20px;
+}
+
+#burger-menu.close span {
+  transform: rotate(-45deg);
+  top: 13px;
+  width: 27px;
+}
+#burger-menu.close span:before {
+  top: 0px;
+  transform: rotate(90deg);
+  width: 27px;
+}
+#burger-menu.close span:after {
+  top: 0px;
+  left:0;
+  transform: rotate(90deg);
+  opacity:0;
+  width:0;
+}
