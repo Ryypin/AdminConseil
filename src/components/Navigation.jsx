@@ -19,10 +19,8 @@ export function Navigation() {
     const isMobileScreen = window.matchMedia('(max-width: 768px)').matches;
 
     const navigations = [
-        { name: 'Services', href: '/services' },
         { name: 'Coaching', href: '/coaching' },
-        { name: 'Nos locations', href: '/locations' },
-        { name: 'Tarifs', href: '/tarifs' }
+        { name: 'Nos locations', href: '/locations' }
     ];
 
     // Burger menu
@@ -37,12 +35,12 @@ export function Navigation() {
     };
 
     return (
-        <header className='w-full fixed top-0 left-0 right-0 z-50 bg-white border-b-2 border-secondary'>
-            <nav className='w-full px-4 py-3 md:py-4 max-w-1280 mx-auto md:flex md:flex-row md:items-center md:justify-between'>
+        <header className='w-full fixed top-0 left-0 right-0 z-50 bg-white border-b-2 border-light'>
+            <nav className='w-full px-4 py-3 md:py-3 max-w-1280 mx-auto md:flex md:flex-row md:items-center md:justify-between'>
                 <div className="md:flex md:flex-row md:items-center md:gap-10 lg:gap-20">
                     <div className='flex flex-row items-center justify-between'>
                         <Link to="/">
-                            <img className='h-10 md:h-14' src={Logo} alt="" />
+                            <img className='h-10' src={Logo} alt="" />
                         </Link>
                         <button className='block md:hidden' onClick={selectBlock}>
                             <div id="burger-menu" className={`burger-menu ${isOpen ? 'close' : ''}`} onClick={toggleMenu}>

@@ -3,10 +3,8 @@ import { Link } from "react-router-dom"
 
 export function Footer(){
     const navigations = [
-        { name: 'Services', href: '/services' },
         { name: 'Coaching', href: '/coaching' },
-        { name: 'Nos locations', href: '/locations' },
-        { name: 'Tarifs', href: '/tarifs' }
+        { name: 'Nos locations', href: '/locations' }
     ];
 
     return (

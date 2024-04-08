@@ -8,6 +8,7 @@ export default {
     colors: {
       'primary': '#090A74',
       'secondary': '#068B9A',
+      'light': '#78edfa',
       'orange': '#ED7F10',
       'dark': '#273444',
       'white': '#FFFFFF'

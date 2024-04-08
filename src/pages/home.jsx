@@ -8,8 +8,8 @@ export function Home() {
         <>
             <HeaderHome />
             <SectionServices />
-            <SectionWho />
             <SectionLocation />
+            <SectionWho />
         </>
     )
 }

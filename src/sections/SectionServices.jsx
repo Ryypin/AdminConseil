@@ -28,16 +28,25 @@ export function SectionServices() {
             <section>
                 <div className="container">
                     <Subtitle text="Nos services" type="normal" />
-                    <div className="flex flex-col items-center md:flex-row md:items-start gap-6">
-                        {services.map((item, index) => (
-                            // Utilisation de la clé (key) pour aider React à identifier chaque élément de manière unique
-                            <div key={index} className='p-4 bg-white shadow-md rounded-xl text-lg font-medium text-center'>
+                    <div className="flex flex-col items-center md:flex-row md:items-end gap-6">
+                        {services.map((item, index) => {
+                            if(index == 1){
+                                // Utilisation de la clé (key) pour aider React à identifier chaque élément de manière unique
+                            return <div key={index} className='p-4 shadow-md bg-white rounded-xl text-lg font-medium text-center md:mb-8'>
                                 <div className="flex flex-col items-center"><img src={item.img} alt="" /></div>
                                 <h3 className="h3 mb-4">{item.name}</h3>
                                 <p className="mb-4">{item.text}</p>
                                 <Link className="link" to={item.href}>En savoir plus</Link>
                             </div>
-                        ))}
+                            } else {
+                                return <div key={index} className='p-4 bg-white shadow-md rounded-xl text-lg font-medium text-center'>
+                                    <div className="flex flex-col items-center"><img src={item.img} alt="" /></div>
+                                    <h3 className="h3 mb-4">{item.name}</h3>
+                                    <p className="mb-4">{item.text}</p>
+                                    <Link className="link" to={item.href}>En savoir plus</Link>
+                                </div>
+                            }
+                        })}
                     </div>
                 </div>
             </section>
