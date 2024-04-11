@@ -1,7 +1,7 @@
 import Logo from '../assets/images/logo_color.png'
 import { Link } from "react-router-dom"
 
-export function Footer(){
+export function Footer() {
     const navigations = [
         { name: 'Coaching', href: '/coaching' },
         { name: 'Nos locations', href: '/locations' }
@@ -9,7 +9,7 @@ export function Footer(){
 
     return (
         <>
-            <footer className="px-4 md:px-0 py-8 border-t-2 border-t-secondary">
+            <footer className="px-4 md:px-0 py-8 border-t-2 border-light">
                 <div className="container flex flex-col md:flex-row justify-between">
                     <div className='text-center md:text-left mb-10 md:mb-0'>
                         <p className="h3 mt-0">Contact</p>

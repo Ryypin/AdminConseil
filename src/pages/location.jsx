@@ -1,7 +1,11 @@
+import { HeaderLocation } from "../sections/HeaderLocation"
+import { SectionTopLoc } from "../sections/SectionTopLoc"
+
 export function Location() {
     return (
         <>
-            <h1>This is location page</h1>
+            <HeaderLocation />
+            <SectionTopLoc />
         </>
     )
 }

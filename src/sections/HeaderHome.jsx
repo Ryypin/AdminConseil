@@ -6,10 +6,11 @@ export function HeaderHome() {
         <>
             <section className="!pt-16 md:!pt-32 overflow-hidden">
                 <div className="container">
-                    <img src={RightImg} className="absolute hidden top-2 right-0 max-w-[400px] md:block md:-top-24 md:-right-40 xl:-top-52 xl:-right-56 md:max-w-[650px] xl:max-w-max" alt="" />
+                    <img src={RightImg} className="absolute hidden top-2 right-0 max-w-[400px] md:block md:-top-24 md:-right-40 xl:-top-52 xl:-right-56 md:max-w-[600px] xl:max-w-[800px]" alt="" />
                     <div className="flex flex-row items-start relative z-10">
-                        <div className="basis-7/12">
+                        <div className="md:basis-7/12">
                             <h1 className="h1">Bienvenue sur AdminConseil, </h1>
+                            <div className="bg-secondary w-20 h-1 rounded mb-7"></div>
                             <div className="content mb-6">
                                 <p>
                                     votre partenaire de confiance pour la gestion de locations saisonnières au cœur des Baronnies provençales.
@@ -19,7 +20,7 @@ export function HeaderHome() {
                                 </p>
                             </div>
                             <div className="flex flex-col items-center">
-                                <Button text="Contactez-nous" type="cta"  />
+                                <Button text="Contactez-nous" type="cta" />
                             </div>
                         </div>
                     </div>
