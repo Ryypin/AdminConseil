@@ -1,7 +1,10 @@
 import { useRef, useState } from 'react'
 import { Link } from "react-router-dom"
 import Logo from '../assets/images/logo_color.png'
-import Button from './Button';
+import Button from './Button'
+import { useLanguage } from '../components/LanguageContext';
+import labelsFr from '../labels/labels_fr';
+import labelsEn from '../labels/labels_en';
 
 export function Navigation() {
     const [selected, setSelected] = useState(false); // État pour stocker si le bloc est sélectionné ou non
@@ -18,13 +21,6 @@ export function Navigation() {
     // Vérifier si l'écran est de petite taille (mobile)
     const isMobileScreen = window.matchMedia('(max-width: 768px)').matches;
 
-    const navigations = [
-        { name: 'Services', href: '/services' },
-        { name: 'Coaching', href: '/coaching' },
-        { name: 'Nos locations', href: '/locations' },
-        { name: 'Tarifs', href: '/tarifs' }
-    ];
-
     // Burger menu
     const [isOpen, setIsOpen] = useState(false);
 
@@ -35,6 +31,15 @@ export function Navigation() {
     const handleClick = () => {
         alert("Le bouton a été cliqué !");
     };
+
+    //Lang
+    const { language } = useLanguage();
+    const labels = language === 'fr' ? labelsFr : labelsEn;
+
+    const navigations = [
+        { name: labels.navigation_1, href: '/coaching' },
+        { name: labels.navigation_2, href: '/locations' }
+    ];
 
     return (
         <header className='w-full fixed top-0 left-0 right-0 z-50 bg-white border-b-2 border-secondary'>
@@ -47,7 +52,7 @@ export function Navigation() {
                         <button className='block md:hidden' onClick={selectBlock}>
                             <div id="burger-menu" className={`burger-menu ${isOpen ? 'close' : ''}`} onClick={toggleMenu}>
                                 <span></span>
-                            </div> 
+                            </div>
                         </button>
                     </div>
                     <div ref={blockRef} className={blockClasses}>
@@ -65,8 +70,12 @@ export function Navigation() {
                         </ul>
                     </div>
                 </div>
-                <div className='hidden md:block'>
+                <div className='hidden md:flex flex-row items-center gap-3'>
                     <Button text="Contactez-nous" onClick={handleClick} type="info" />
+                    <div className="flex flex-row items-center gap-2">
+                        <button onClick={() => setLanguage('fr')}>FR</button>
+                        <button onClick={() => setLanguage('en')}>EN</button>
+                    </div>
                 </div>
             </nav>
         </header>
