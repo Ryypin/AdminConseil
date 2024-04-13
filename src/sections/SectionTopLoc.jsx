@@ -1,16 +1,10 @@
 import Subtitle from "../components/Subtitle"
 import Filter from "../components/Filter"
+import locations from '../../data/locations'
 
 export function SectionTopLoc() {
 
-    const filters = ['Nature', 'Ville', 'Plage'];
-
-    const images = [
-        { id: 1, url: 'nature.jpg', alt: 'Nature', category: 'Nature' },
-        { id: 2, url: 'city.jpg', alt: 'Ville', category: 'Ville' },
-        { id: 3, url: 'beach.jpg', alt: 'Plage', category: 'Plage' },
-        // Ajoutez d'autres images avec leurs catégories
-    ];
+    const filters = ['2/4 pers.', '6 pers.', '+10 pers.'];
 
     return (
         <>
@@ -19,7 +13,7 @@ export function SectionTopLoc() {
                     <div className="flex flex-col items-center">
                         <Subtitle text="Nos meilleures locations" type="normal" />
                     </div>
-                    <Filter filters={filters} images={images} />
+                    <Filter filters={filters} images={locations} />
                 </div>
             </section>
         </>
