@@ -3,7 +3,7 @@ import LeftImg from '../assets/images/montage.png';
 export function HeaderLocation() {
     return (
         <>
-            <section className="!pt-16 md:!pt-32 overflow-hidden relative">
+            <section className="!pt-16 md:!pt-32 overflow-visible relative">
                 <div className="container flex flex-row">
                     <img src={LeftImg} className="absolute hidden top-2 left-0 max-w-[400px] md:block md:-top-24 md:-left-60 xl:-top-40 xl:-left-40 md:max-w-[600px] xl:max-w-[800px]" alt="" />
                     <div className="ml-auto md:basis-7/12 relative z-10">

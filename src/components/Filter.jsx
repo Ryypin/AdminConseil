@@ -26,7 +26,7 @@ const Filter = ({ filters, images }) => {
                         <div className='h-full shadow-md rounded-2xl bg-opacity-0'>
                             <div className="flex flex-col items-center">
                                 <div className="w-full h-[300px] relative overflow-hidden">
-                                    <img className="absolute left-0 right-0 top-0" src={image.urlImg} alt={image.alt} />
+                                    <img className="absolute left-0 right-0 top-0" src={'/src/assets/images/location_'+image.id+'.png'} alt={image.alt} />
                                 </div>
                                 <div className="bg-primary text-white w-full px-5 py-2 rounded-2xl rounded-t-none flex flex-row items-center justify-between">
                                     <div>
