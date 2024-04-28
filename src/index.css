@@ -52,13 +52,19 @@
     @apply text-base md:text-lg;
   }
   .content p{
-    @apply mb-5;
+    @apply mb-4;
   }
   .content p:last-of-type{
     @apply mb-0;
   }
   .container{
     @apply 2xl:!max-w-[1280px];
+  }
+  ul {
+    @apply text-base md:text-lg;
+  }
+  .checkList li {
+    @apply pl-8 bg-[url('./assets/images/check_mark.svg')] bg-no-repeat bg-[length:20px] bg-[left_2px_top_5px]
   }
 }
 

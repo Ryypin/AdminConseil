@@ -5,7 +5,7 @@ export function SectionWho() {
     return (
         <>
             <section className="px-0">
-                <div className="py-16 px-4 md:px-0">
+                <div className="px-4 md:px-0">
                     <div className="container">
                         <div className="flex flex-col-reverse md:flex-row items-center gap-10">
                             <div className="basis-4/12">

@@ -1,7 +1,13 @@
+import { HeaderCoaching } from "../sections/HeaderCoaching"
+import { SectionAvtg } from "../sections/SectionAvtg"
+import { SectionCoachingWho } from "../sections/SectionCoachingWho"
+
 export function Coaching() {
     return (
         <>
-            <h1>This is page2</h1>
+            <HeaderCoaching />
+            <SectionAvtg />
+            <SectionCoachingWho />
         </>
     )
 }

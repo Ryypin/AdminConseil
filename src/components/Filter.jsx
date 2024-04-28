@@ -13,10 +13,10 @@ const Filter = ({ filters, images }) => {
     return (
         <div>
             <div className="flex flex-col items-start mb-8">
-                <ul className='py-4 px-8 flex flex-row items-center text-lg gap-20 bg-white rounded shadow-md w-fit mx-auto'>
-                    <li className={selectedFilter === null ? 'font-bold text-orange cursor-pointer' : 'cursor-pointer'} onClick={() => handleClick('Tous')}>Tous</li>
+                <ul className='grid grid-cols-2 md:grid-cols-4 py-4 px-4 md:px-8 text-lg gap-8 md:gap-20 bg-primary rounded-xl shadow-md w-full md:w-fit mx-auto'>
+                    <li className={selectedFilter === null ? 'font-bold text-orange cursor-pointer' : 'cursor-pointer text-white'} onClick={() => handleClick('Tous')}>Tous</li>
                     {filters.map(filter => (
-                        <li key={filter} className={selectedFilter === filter ? 'font-bold text-orange cursor-pointer' : 'cursor-pointer'} onClick={() => handleClick(filter)}>{filter}</li>
+                        <li key={filter} className={selectedFilter === filter ? 'font-bold text-orange cursor-pointer' : 'cursor-pointer text-white'} onClick={() => handleClick(filter)}>{filter}</li>
                     ))}
                 </ul>
             </div>
