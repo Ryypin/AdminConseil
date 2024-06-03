@@ -1,10 +1,10 @@
 import FaceImg from '../assets/images/face.png'
-import Button from "../components/Button";
+import ContactButton from "../components/ContactButton";
 
 export function HeaderCoaching() {
     return (
         <>
-            <section className="!pt-16 md:!pt-20 overflow-visible relative">
+            <section className="!pt-8 md:!pt-20 overflow-visible relative">
                 <div className="container flex flex-row">
                     <img src={FaceImg} className="absolute hidden top-2 right-0 max-w-[400px] md:block md:-top-24 md:-left-10 xl:left-14 xl:top-4 xl:-right-56 xl:max-w-[700px]" alt="" />
                     <div className="ml-auto md:basis-8/12 relative z-10">
@@ -27,7 +27,7 @@ export function HeaderCoaching() {
                             <p>Ne vous inquiétez pas, vous n'êtes pas seul dans cette aventure !</p>
                         </div>
                         <div className="flex flex-col items-center">
-                            <Button text="Contactez-nous" type="cta" />
+                            <ContactButton text="Contactez-nous" />
                         </div>
                     </div>
                 </div>

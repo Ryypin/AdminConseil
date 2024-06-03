@@ -1,7 +1,6 @@
 import { useRef, useState } from 'react'
 import { Link } from "react-router-dom"
 import Logo from '../assets/images/logo_color.png'
-import Button from './Button';
 
 export function Navigation() {
     const [selected, setSelected] = useState(false); // État pour stocker si le bloc est sélectionné ou non
@@ -58,13 +57,17 @@ export function Navigation() {
                                 </li>
                             ))}
                             <li className='flex flex-col items-center md:hidden'>
-                                <Button text="Contactez-nous" onClick={handleClick} type="info" />
+                                <a href='mailto:cathy.testelmans@gmail.com' className='btn btn-orange btn-info'>
+                                    Contactez-nous
+                                </a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div className='hidden md:block'>
-                    <Button text="Contactez-nous" onClick={handleClick} type="info" />
+                    <a href='mailto:cathy.testelmans@gmail.com' className='btn btn-orange btn-info'>
+                        Contactez-nous
+                    </a>
                 </div>
             </nav>
         </header>

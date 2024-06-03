@@ -1,5 +1,5 @@
 import Subtitle from "../components/Subtitle"
-import Button from "../components/Button";
+import ContactButton from "../components/ContactButton";
 
 export function SectionCoachingWho() {
     return (
@@ -15,7 +15,7 @@ export function SectionCoachingWho() {
                                     <p>Ne laissez pas les défis vous décourager ; laissez-nous vous guider vers le succès.</p>
                                 </div>
                                 <div className="flex flex-col items-center">
-                                    <Button text="Contactez-nous" type="cta" />
+                                    <ContactButton text="Contactez-nous" />
                                 </div>
                             </div>
                         </div>

@@ -1,6 +1,12 @@
 
-function Button({ text, onClick, type, hover }) {
-    let buttonClass = 'btn btn-orange';
+function Button({ text, onClick, type, hover, color }) {
+    var buttonClass;   
+
+    if(color === 'white'){
+        buttonClass = 'btn btn-white border-2 border-orange hover:text-white hover:bg-orange';
+    } else {
+        buttonClass = 'btn btn-orange';
+    }
 
     if (type === 'cta') {
         buttonClass += ' btn-cta';

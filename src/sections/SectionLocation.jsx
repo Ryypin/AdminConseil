@@ -4,6 +4,7 @@ import { Splide, SplideSlide, SplideTrack } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css'
 import Button from "../components/Button"
 import locations from '../../data/locations'
+import { Link } from "react-router-dom"
 
 export function SectionLocation() {
 
@@ -28,7 +29,7 @@ export function SectionLocation() {
 
     return (
         <>
-            <section className="bg-primary">
+            <section className="bg-primary !pb-20">
                 <div className="container">
                     <div className="flex flex-col items-center">
                         <h2 className="h2 text-white">
@@ -46,19 +47,19 @@ export function SectionLocation() {
                                 {locations.map((location, index) => (
                                 // Utilisation de la clé (key) pour aider React à identifier chaque élément de manière unique
                                     <SplideSlide key={index}>
-                                        <div className='card h-full'>
+                                        <div className='card'>
                                             <div className="flex flex-col items-center">
-                                                <div className="w-full h-[300px] relative overflow-hidden">
-                                                    <img className="absolute left-0 right-0 top-0" src={location.urlImg} alt="" />
+                                                <div className="w-full h-[250px] max-h-[250px] md:h-[300px] md:max-h-[300px] relative overflow-hidden rounded-t-3xl">
+                                                    <img className="h-full w-full" src={location.urlImg} alt="" />
                                                 </div>
-                                                <div className="bg-white text-white w-full px-5 py-2 rounded-2xl rounded-t-none flex flex-row items-center justify-between">
+                                                <div className="bg-white text-white w-full px-3 md:px-5 py-2 rounded-2xl rounded-t-none flex flex-row items-center justify-between">
                                                     <div>
-                                                        <h3 className="h4 text-primary md:h3 !m-0">{location.name}</h3>
+                                                        <h3 className="h5 text-primary md:h4 !m-0">{location.name}</h3>
                                                         <p className="m-0 text-dark">{location.person}</p>
                                                     </div>
-                                                    <div>
-                                                        <Button text="En savoir plus" type="info"  />
-                                                    </div>
+                                                    <Link className='btn btn-orange btn-info hover:bg-white hover:text-orange' to={'/location/'+location.id}>
+                                                        En savoir plus
+                                                    </Link>
                                                 </div>
                                             </div>
                                         </div>

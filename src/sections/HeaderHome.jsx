@@ -1,10 +1,10 @@
-import Button from "../components/Button";
+import ContactButton from "../components/ContactButton";
 import RightImg from '../assets/images/round_header_img.png';
 
 export function HeaderHome() {
     return (
         <>
-            <section className="!pt-16 md:!pt-32 overflow-hidden">
+            <section className="!pt-8 md:!pt-32 overflow-hidden">
                 <div className="container">
                     <img src={RightImg} className="absolute hidden top-2 right-0 max-w-[400px] md:block md:-top-24 md:-right-40 xl:-top-52 xl:-right-56 md:max-w-[600px] xl:max-w-[800px]" alt="" />
                     <div className="flex flex-row items-start relative z-10">
@@ -20,7 +20,7 @@ export function HeaderHome() {
                                 </p>
                             </div>
                             <div className="flex flex-col items-center">
-                                <Button text="Contactez-nous" type="cta" />
+                                <ContactButton text="Contactez-nous" />
                             </div>
                         </div>
                     </div>

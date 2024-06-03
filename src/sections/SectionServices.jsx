@@ -4,12 +4,6 @@ import Subtitle from "../components/Subtitle"
 export function SectionServices() {
     const services = [
         { 
-            name: 'Gestion locative', 
-            text: 'La gestion d’une location saisonnière est exigeante, surtout en termes de réactivité et de disponibilité. En nous confiant la gestion intégrale de votre bien.',
-            href: '/services',
-            img: '/src/assets/images/house_icon.png'
-        },
-        { 
             name: 'Coaching', 
             text: 'La gestion d’une location saisonnière est exigeante, surtout en termes de réactivité et de disponibilité. En nous confiant la gestion intégrale de votre bien.',
             href: '/coaching',
@@ -28,24 +22,14 @@ export function SectionServices() {
             <section>
                 <div className="container">
                     <Subtitle text="Nos services" type="normal" />
-                    <div className="flex flex-col items-center md:flex-row md:items-end gap-6">
+                    <div className="flex flex-col items-center md:flex-row md:items-end gap-10 mx-auto">
                         {services.map((item, index) => {
-                            if(index == 1){
-                                // Utilisation de la clé (key) pour aider React à identifier chaque élément de manière unique
-                            return <div key={index} className='p-4 shadow-md bg-white rounded-xl text-lg font-medium text-center md:mb-8'>
+                            return <div key={index} className='p-4 bg-white shadow-md rounded-xl text-lg font-medium text-center w-6/12'>
                                 <div className="flex flex-col items-center"><img src={item.img} alt="" /></div>
                                 <h3 className="h3 mb-4">{item.name}</h3>
-                                <p className="mb-4">{item.text}</p>
+                                <p className="mb-4 px-4">{item.text}</p>
                                 <Link className="link" to={item.href}>En savoir plus</Link>
                             </div>
-                            } else {
-                                return <div key={index} className='p-4 bg-white shadow-md rounded-xl text-lg font-medium text-center'>
-                                    <div className="flex flex-col items-center"><img src={item.img} alt="" /></div>
-                                    <h3 className="h3 mb-4">{item.name}</h3>
-                                    <p className="mb-4">{item.text}</p>
-                                    <Link className="link" to={item.href}>En savoir plus</Link>
-                                </div>
-                            }
                         })}
                     </div>
                 </div>
