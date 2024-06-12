@@ -13,15 +13,15 @@ import image11 from '../src/assets/images/locations/DIGITAL_COTTAGE.png';
 const locations = [
     { 
         id: 1,
-        name: 'L’Olivier d’Anna',
-        text: 'Au coeur de la partie médiévale du village de Sainte-Jalle, studio cosy rénové fin 2023. <br><br> Au plaisir de vous accueillir dans notre douce région ensoleillée au coeur des Baronnies provençales.',
-        location : 'Sainte-Jalle',
-        person : '2/4 pers.',
-        url: 'https://www.airbnb.fr/rooms/608641665832643050?source_impression_id=p3_1717440950_P39DexpLnBYnDrRK',
-        urlImg: image1, 
+        name: 'Sainte Luce',
+        text: 'Séjournez dans le charme et le confort d’une ferme rénovée de façon contemporaine, avec charme et authenticité. Surface habitable de 300m2 baignée de lumière, 1,2 ha de terrain arboré. La maison et ses terrasses offrent une vue imprenable sur la vallée, ses oliviers et ses lavandes. Un lieu idéal pour passer ses vacances au calme près de la piscine (12m sur 4,5 m), et/ou sportives (escalade, randonnées, via ferrata, vélo...) ou culturelles (Vaison-la-Romaine), à 15 minutes de Buis-les-Baronnies.',
+        location : 'Vercoiran',
+        person : '10 à 14 pers.',
+        url: 'https://www.airbnb.fr/rooms/54104653?source_impression_id=p3_1717440973_P3JRV_3fqWGNxQ_V',
+        urlImg: image3, 
         alt: 'Nature', 
-        category: '2/4 pers.',
-        exterior: 'Piscine partagée'
+        category: '+10 pers.',
+        exterior: 'Piscine privée'
     },
     { 
         id: 2,
@@ -37,42 +37,6 @@ const locations = [
     },
     { 
         id: 3,
-        name: 'Sainte Luce',
-        text: 'Séjournez dans le charme et le confort d’une ferme rénovée de façon contemporaine, avec charme et authenticité. Surface habitable de 300m2 baignée de lumière, 1,2 ha de terrain arboré. La maison et ses terrasses offrent une vue imprenable sur la vallée, ses oliviers et ses lavandes. Un lieu idéal pour passer ses vacances au calme près de la piscine (12m sur 4,5 m), et/ou sportives (escalade, randonnées, via ferrata, vélo...) ou culturelles (Vaison-la-Romaine), à 15 minutes de Buis-les-Baronnies.',
-        location : 'Vercoiran',
-        person : '10 à 14 pers.',
-        url: 'https://www.airbnb.fr/rooms/54104653?source_impression_id=p3_1717440973_P3JRV_3fqWGNxQ_V',
-        urlImg: image3, 
-        alt: 'Nature', 
-        category: '+10 pers.',
-        exterior: 'Piscine privée'
-    },
-    { 
-        id: 4,
-        name: 'Le Macajalle',
-        text: 'Au coeur de la partie médiévale du village de Sainte-Jalle, studio cosy rénové fin 2023. <br><br>Au plaisir de vous accueillir dans notre douce région ensoleillée au coeur des Baronnies provençales.',
-        location : 'Sainte-Jalle',
-        person : '2 pers.',
-        url: 'https://www.airbnb.fr/rooms/1017277966663184963?source_impression_id=p3_1717440862_P3YQ40Kbs1ytsSpv',
-        urlImg: image4, 
-        alt: 'Nature', 
-        category: '2/4 pers.' ,
-        exterior: 'Piscine partagée'
-    },
-    { 
-        id: 5,
-        name: 'La Viste',
-        text: 'Profitez d’un séjour à deux ou avec les enfants dans ce gîte doté d’une piscine privée de deux chambres et d’une salle de bains. A 30 min des villes de Nyons et Buis-les-Baronnies, nichée sur les hauteurs du petit village de Saint-Sauveur-Gouvernet, la Viste (vue) est une ancienne bergerie complètement rénovée. Lovée au milieu d’une prairie de thym et de lavande, notre gîte bénéficie d’une vue imprenable sur les collines de la vallée de l’Ennuyé.',
-        location : 'Saint-Sauveur-Gouvernet',
-        person : '2/4 pers.',
-        url: 'https://www.airbnb.fr/rooms/46307532?source_impression_id=p3_1717440985_P33Oht2g-jgWlU20',
-        urlImg: image5, 
-        alt: 'Nature', 
-        category: '2/4 pers.',
-        exterior: 'Piscine privée'
-    },
-    { 
-        id: 6,
         name: 'Villa Tamaris',
         text: 'Séjournez dans le charme et le confort d’une maison entièrement rénovée de manière contemporaine, alliant élégance et bon goût. <br><br>Nichée au fond d’une impasse, à seulement 10 min. à pied du centre de Buis, cette propriété offre une atmosphère paisible tout en étant à proximité des commerces de la ville. L’endroit idéal pour des vacances en famille ou entre amis. Que vous soyez adepte du farniente, amateur de sports ou avide de découvertes culturelles !',
         location : 'Buis-les-Baronnies',
@@ -84,7 +48,31 @@ const locations = [
         exterior: 'Piscine privée'
     },
     { 
-        id: 7,
+        id: 4,
+        name: 'L’Olivier d’Anna',
+        text: 'Au coeur de la partie médiévale du village de Sainte-Jalle, studio cosy rénové fin 2023. <br><br> Au plaisir de vous accueillir dans notre douce région ensoleillée au coeur des Baronnies provençales.',
+        location : 'Sainte-Jalle',
+        person : '2/4 pers.',
+        url: 'https://www.airbnb.fr/rooms/608641665832643050?source_impression_id=p3_1717440950_P39DexpLnBYnDrRK',
+        urlImg: image1, 
+        alt: 'Nature', 
+        category: '2/4 pers.',
+        exterior: 'Piscine partagée'
+    },
+    { 
+        id: 5,
+        name: 'Le Macajalle',
+        text: 'Au coeur de la partie médiévale du village de Sainte-Jalle, studio cosy rénové fin 2023. <br><br>Au plaisir de vous accueillir dans notre douce région ensoleillée au coeur des Baronnies provençales.',
+        location : 'Sainte-Jalle',
+        person : '2 pers.',
+        url: 'https://www.airbnb.fr/rooms/1017277966663184963?source_impression_id=p3_1717440862_P3YQ40Kbs1ytsSpv',
+        urlImg: image4, 
+        alt: 'Nature', 
+        category: '2/4 pers.' ,
+        exterior: 'Piscine partagée'
+    },
+    { 
+        id: 6,
         name: 'Le Mas',
         text: 'Dans un cadre champêtre et un environnement privilégié, ce mas vous promet des vacances uniques dans une propriété aux prestations haut de gamme au coeur d’une vallée d’oliviers, de pins et de cyprès.',
         location : 'La-Roche-sur-le-Buis',
@@ -96,7 +84,7 @@ const locations = [
         exterior: 'Piscine privée'
     },
     { 
-        id: 8,
+        id: 7,
         name: 'La Bastide',
         text: 'A seulement 10 minutes à pied du centre de Buis-les-Baronnies, dans un cadre paisible, superbe bastide pouvant accueillir jusqu’à 12 personnes, située sur un terrain arboré de 2 500 m². Piscine chauffée exposée plein Sud.',
         location : 'La-Roche-sur-le-Buis',
@@ -108,19 +96,7 @@ const locations = [
         exterior: 'Piscine privée'
     },
     { 
-        id: 9,
-        name: 'Le Bastidon',
-        text: 'La maison est située au cœur du vieux village de Sainte Jalle en Baronnies provençales.<br> Elle convient pour des vacances familiales, entre amis ou en groupe.<br>Un garage est disponible pour vos motos et vélos.<br> Christine sera votre personne de contact avant votre arrivée et sur place.',
-        location : 'Sainte-Jalle',
-        person : '6 pers.',
-        url: 'https://www.airbnb.fr/rooms/604230236144465041?source_impression_id=p3_1717441030_P3IYi4BfCnX0rkr9',
-        urlImg: image9, 
-        alt: 'Nature', 
-        category: '6 pers.',
-        exterior: ''
-    },
-    { 
-        id: 10,
+        id: 8,
         name: 'Le Lavandier',
         text: 'Au coeur du village médiéval de Sainte-Jalle, dans un environnement très calme, notre gîte est un agréable pied à terre pour découvrir les Baronnies provençales.<br> Située au 1er étage, entièrement remis à neuf en mars 2020, il comprend deux chambres disposant chaque d’une salle d’eau et d’une WC, une pièce avec un coin cuisine et un canapé-lit.<br> Vue dégagée sur le vieux village de Sainte-Jalle et les collines environnantes.',
         location : 'Sainte-Jalle',
@@ -130,6 +106,30 @@ const locations = [
         alt: 'Nature', 
         category: '2/4 pers.',
         exterior: 'Piscine partagée'
+    },
+    { 
+        id: 9,
+        name: 'La Viste',
+        text: 'Profitez d’un séjour à deux ou avec les enfants dans ce gîte doté d’une piscine privée de deux chambres et d’une salle de bains. A 30 min des villes de Nyons et Buis-les-Baronnies, nichée sur les hauteurs du petit village de Saint-Sauveur-Gouvernet, la Viste (vue) est une ancienne bergerie complètement rénovée. Lovée au milieu d’une prairie de thym et de lavande, notre gîte bénéficie d’une vue imprenable sur les collines de la vallée de l’Ennuyé.',
+        location : 'Saint-Sauveur-Gouvernet',
+        person : '2/4 pers.',
+        url: 'https://www.airbnb.fr/rooms/46307532?source_impression_id=p3_1717440985_P33Oht2g-jgWlU20',
+        urlImg: image5, 
+        alt: 'Nature', 
+        category: '2/4 pers.',
+        exterior: 'Piscine privée'
+    },
+    { 
+        id: 10,
+        name: 'Le Bastidon',
+        text: 'La maison est située au cœur du vieux village de Sainte Jalle en Baronnies provençales.<br> Elle convient pour des vacances familiales, entre amis ou en groupe.<br>Un garage est disponible pour vos motos et vélos.<br> Christine sera votre personne de contact avant votre arrivée et sur place.',
+        location : 'Sainte-Jalle',
+        person : '6 pers.',
+        url: 'https://www.airbnb.fr/rooms/604230236144465041?source_impression_id=p3_1717441030_P3IYi4BfCnX0rkr9',
+        urlImg: image9, 
+        alt: 'Nature', 
+        category: '6 pers.',
+        exterior: ''
     },
     { 
         id: 11,

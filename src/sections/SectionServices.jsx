@@ -24,7 +24,7 @@ export function SectionServices() {
                     <Subtitle text="Nos services" type="normal" />
                     <div className="flex flex-col items-center md:flex-row md:items-end gap-10 mx-auto">
                         {services.map((item, index) => {
-                            return <div key={index} className='p-4 bg-white shadow-md rounded-xl text-lg font-medium text-center w-6/12'>
+                            return <div key={index} className='p-4 bg-white shadow-md rounded-xl text-lg font-medium text-center md:w-6/12'>
                                 <div className="flex flex-col items-center"><img src={item.img} alt="" /></div>
                                 <h3 className="h3 mb-4">{item.name}</h3>
                                 <p className="mb-4 px-4">{item.text}</p>

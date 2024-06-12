@@ -6,7 +6,7 @@ export function Layout() {
     return (
         <>
             <Navigation />
-                <main className="mt-16 md:mt-20">
+                <main id="main" className="mt-16 md:mt-20">
                     <Outlet />
                 </main>
             <Footer />

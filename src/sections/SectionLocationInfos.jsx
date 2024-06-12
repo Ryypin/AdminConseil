@@ -12,6 +12,8 @@ export function SectionLocationInfos() {
     // Rechercher les données de la location correspondant à l'ID
     const locationData = locations.find(location => location.id === locationId);
 
+    window.scrollTo(0, 0);
+
     return (
         <>
             <section className="!pt-8 md:!pt-20 overflow-visible relative">

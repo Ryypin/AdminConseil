@@ -34,7 +34,7 @@ const Filter = ({ filters, images }) => {
                                         <p className="m-0">{image.person}</p>
                                     </div>
                                     <div>
-                                        <Link className='btn btn-orange btn-info hover:bg-white hover:text-orange' to={'/location/'+image.id}>
+                                        <Link className='btn btn-orange btn-info hover:bg-white hover:text-orange' to={'/location/'+image.id+'#main'}>
                                             En savoir plus
                                         </Link>
                                     </div>
