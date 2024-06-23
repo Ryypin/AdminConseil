@@ -6,7 +6,7 @@ export function HeaderCoaching() {
         <>
             <section className="!pt-8 md:!pt-20 overflow-visible relative">
                 <div className="container flex flex-row">
-                    <img src={FaceImg} className="absolute hidden top-2 right-0 max-w-[400px] md:block md:-top-24 md:-left-10 xl:left-8 2xl:left-12 xl:top-4 xl:-right-56 2xl:max-w-[700px]" alt="" />
+                    <img src={FaceImg} className="absolute hidden top-2 right-0 max-w-[400px] md:block md:-top-24 md:-left-10 xl:left-8 2xl:left-12 xl:top-4 xl:-right-56 2xl:max-w-[525px]" alt="" />
                     <div className="ml-auto md:basis-8/12 relative z-10">
                         <h1 className="h1">Coaching</h1>
                         <div className="bg-secondary w-20 h-1 rounded mb-7"></div>

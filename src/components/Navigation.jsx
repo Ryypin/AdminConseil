@@ -19,7 +19,8 @@ export function Navigation() {
 
     const navigations = [
         { name: 'Coaching', href: '/coaching' },
-        { name: 'Nos locations', href: '/locations' }
+        { name: 'Nos locations', href: '/locations' },
+        { name: 'Tarifs', href: '/tarifs' }
     ];
 
     // Burger menu

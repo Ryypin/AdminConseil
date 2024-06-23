@@ -6,7 +6,7 @@ export function HeaderHome() {
         <>
             <section className="!pt-8 md:!pt-32 overflow-hidden">
                 <div className="container">
-                    <img src={RightImg} className="absolute hidden top-2 right-0 max-w-[400px] md:block md:-top-24 md:-right-40 xl:-top-52 xl:-right-56 md:max-w-[600px] xl:max-w-[800px]" alt="" />
+                    <img src={RightImg} className="absolute hidden top-2 right-0 max-w-[400px] md:block md:-top-24 md:-right-40 xl:-top-36 xl:-right-40 md:max-w-[600px] xl:max-w-[800px]" alt="" />
                     <div className="flex flex-row items-start relative z-10">
                         <div className="md:basis-7/12">
                             <h1 className="h1">Bienvenue sur AdminConseil, </h1>

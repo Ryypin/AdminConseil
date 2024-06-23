@@ -5,6 +5,7 @@ import { Home } from './pages/home'
 import { Coaching } from './pages/coaching'
 import { Location } from './pages/location'
 import { LocationInfo } from './pages/location-infos'
+import { Tarifs } from './pages/tarifs'
 import { Layout } from './Layout'
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route path='/' element={<Home/>}/>
           <Route path='/coaching' element={<Coaching/>}/>
           <Route path='/locations' element={<Location/>}/>
+          <Route path='/tarifs' element={<Tarifs/>}/>
         </Route>
       </Routes>
     </Router>

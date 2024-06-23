@@ -4,6 +4,7 @@ import Button from "../components/Button"
 import ContactButton from "../components/ContactButton"
 import locationIcon from '../assets/images/gps-icon.svg'
 import sunIcon from '../assets/images/sun.svg'
+import people from '../assets/images/people.svg'
 
 export function SectionLocationInfos() {
     const { id } = useParams(); // Récupérer le paramètre d'URL
@@ -37,6 +38,10 @@ export function SectionLocationInfos() {
                                     <p className='text-white font-medium'>{locationData.exterior}</p>
                                 </div>
                             )}
+                            <div className='px-6 py-2 bg-primary flex flex-row items-center gap-3 w-fit rounded-full'>
+                                <img className="h-6 !fill-white" src={people} alt="" />
+                                <p className='text-white font-medium'>{locationData.category}</p>
+                            </div>
                         </div>
                         <div className="content mb-6">
                             <p dangerouslySetInnerHTML={{ __html: locationData.text }}></p>

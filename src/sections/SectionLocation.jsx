@@ -29,45 +29,47 @@ export function SectionLocation() {
 
     return (
         <>
-            <section className="bg-primary !pb-20">
-                <div className="container">
-                    <div className="flex flex-col items-center">
-                        <h2 className="h2 text-white">
-                            Nos locations
-                        </h2>
-                        <div className="bg-secondary w-20 h-1 rounded mb-7"></div>
-                    </div>
-                    <Splide 
-                        options={ options }
-                        aria-labelledby="autoplay-example-heading"
-                        hasTrack={ false }
-                    >
-                        <div style={ { position: 'relative' } }>
-                            <SplideTrack>
-                                {locations.map((location, index) => (
-                                // Utilisation de la clé (key) pour aider React à identifier chaque élément de manière unique
-                                    <SplideSlide key={index}>
-                                        <div className='card'>
-                                            <div className="flex flex-col items-center">
-                                                <div className="w-full h-[250px] max-h-[250px] md:h-[300px] md:max-h-[300px] relative overflow-hidden rounded-t-3xl">
-                                                    <img className="h-full w-full" src={location.urlImg} alt="" />
-                                                </div>
-                                                <div className="bg-white text-white w-full px-3 md:px-5 py-2 rounded-2xl rounded-t-none flex flex-row items-center justify-between">
-                                                    <div>
-                                                        <h3 className="h5 text-primary md:h4 !m-0">{location.name}</h3>
-                                                        <p className="m-0 text-dark">{location.person}</p>
+            <section className="!pb-20">
+                <div className="bg-primary py-12">
+                    <div className="container">
+                        <div className="flex flex-col items-center">
+                            <h2 className="h2 text-white">
+                                Nos locations
+                            </h2>
+                            <div className="bg-secondary w-20 h-1 rounded mb-7"></div>
+                        </div>
+                        <Splide
+                            options={ options }
+                            aria-labelledby="autoplay-example-heading"
+                            hasTrack={ false }
+                        >
+                            <div style={ { position: 'relative' } }>
+                                <SplideTrack>
+                                    {locations.map((location, index) => (
+                                    // Utilisation de la clé (key) pour aider React à identifier chaque élément de manière unique
+                                        <SplideSlide key={index}>
+                                            <div className='card'>
+                                                <div className="flex flex-col items-center">
+                                                    <div className="w-full h-[250px] max-h-[250px] md:h-[300px] md:max-h-[300px] relative overflow-hidden rounded-t-3xl">
+                                                        <img className="h-full w-full" src={location.urlImg} alt="" />
                                                     </div>
-                                                    <Link className='btn btn-orange btn-info hover:bg-white hover:text-orange' to={'/location/'+location.id}>
-                                                        En savoir plus
-                                                    </Link>
+                                                    <div className="bg-white text-white w-full px-3 md:px-5 py-2 rounded-2xl rounded-t-none flex flex-row items-center justify-between">
+                                                        <div>
+                                                            <h3 className="h5 text-primary md:h4 !m-0">{location.name}</h3>
+                                                            <p className="m-0 text-dark">{location.person}</p>
+                                                        </div>
+                                                        <Link className='btn btn-orange btn-info hover:bg-white hover:text-orange' to={'/location/'+location.id}>
+                                                            En savoir plus
+                                                        </Link>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </SplideSlide>
-                                ))}
-                            </SplideTrack>
-                        </div>
-                    </Splide>
+                                        </SplideSlide>
+                                    ))}
+                                </SplideTrack>
+                            </div>
+                        </Splide>
+                    </div>
                 </div>
             </section>
         </>
