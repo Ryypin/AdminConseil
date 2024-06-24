@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link } from "react-router-dom"
+import people from "../assets/images/people.svg"
 
 const Filter = ({ filters, images }) => {
     const [selectedFilter, setSelectedFilter] = useState(null);
@@ -31,7 +32,10 @@ const Filter = ({ filters, images }) => {
                                 <div className="bg-primary text-white w-full px-5 py-2 rounded-2xl rounded-t-none flex flex-row items-center justify-between">
                                     <div>
                                         <h3 className="h4 !text-xl md:h3 !m-0">{image.name}</h3>
-                                        <p className="m-0">{image.person}</p>
+                                        <div className="flex flex-row items-center gap-2">
+                                            <img className="h-5" src={people} alt="" />
+                                            <p className="m-0 text-white font-medium">{image.person}</p>
+                                        </div>
                                     </div>
                                     <div>
                                         <Link className='btn btn-orange btn-info hover:bg-white hover:text-orange' to={'/location/'+image.id+'#main'}>

@@ -4,10 +4,12 @@ import ContactButton from "../components/ContactButton";
 export function HeaderCoaching() {
     return (
         <>
-            <section className="!pt-8 md:!pt-20 overflow-visible relative">
-                <div className="container flex flex-row">
-                    <img src={FaceImg} className="absolute hidden top-2 right-0 max-w-[400px] md:block md:-top-24 md:-left-10 xl:left-8 2xl:left-12 xl:top-4 xl:-right-56 2xl:max-w-[525px]" alt="" />
-                    <div className="ml-auto md:basis-8/12 relative z-10">
+            <section className="!pt-8 md:!pt-10 overflow-visible relative bg-none md:bg-[url(../src/assets/images/elipse_primary.png)] bg-no-repeat bg-[right_calc(17%-500px)_bottom] bg-[length:350px]">
+                <div className="container flex flex-row md:gap-8">
+                    <div className="md:basis-5/12 max-md:hidden">
+                        <img src={FaceImg} className="max-w-[500px]" alt="" />
+                    </div>
+                    <div className="ml-auto md:basis-7/12 relative z-10">
                         <h1 className="h1">Coaching</h1>
                         <div className="bg-secondary w-20 h-1 rounded mb-7"></div>
                         <div className="content mb-6">

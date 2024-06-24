@@ -34,7 +34,7 @@
     @apply text-2xl font-primaryBold mb-5 mt-4;
   }
   .h4 {
-    @apply text-lg font-primaryBold mt-2;
+    @apply text-xl font-primaryBold mt-2;
   }
   .h5 {
     @apply text-base font-primaryBold mt-2;

@@ -1,10 +1,9 @@
-import Subtitle from "../components/Subtitle"
 import { Splide, SplideSlide, SplideTrack } from '@splidejs/react-splide';
 // Default theme
 import '@splidejs/react-splide/css'
-import Button from "../components/Button"
 import locations from '../../data/locations'
 import { Link } from "react-router-dom"
+import peopleBlack from '../assets/images/people_dark.svg'
 
 export function SectionLocation() {
 
@@ -56,7 +55,10 @@ export function SectionLocation() {
                                                     <div className="bg-white text-white w-full px-3 md:px-5 py-2 rounded-2xl rounded-t-none flex flex-row items-center justify-between">
                                                         <div>
                                                             <h3 className="h5 text-primary md:h4 !m-0">{location.name}</h3>
-                                                            <p className="m-0 text-dark">{location.person}</p>
+                                                            <div className="flex flex-row items-center gap-2">
+                                                                <img className="h-5" src={peopleBlack} alt="" />
+                                                                <p className="m-0 text-dark font-medium">{location.person}</p>
+                                                            </div>
                                                         </div>
                                                         <Link className='btn btn-orange btn-info hover:bg-white hover:text-orange' to={'/location/'+location.id}>
                                                             En savoir plus
