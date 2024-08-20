@@ -10,7 +10,7 @@ export function SectionLocation() {
     const options = {
         type : 'loop',
         gap : '1rem',
-        focus: 'center',
+        focus: 'left',
         perPage : 3,
         perMove: 1,
         autoplay : false,
