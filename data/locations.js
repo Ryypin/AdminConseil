@@ -9,6 +9,7 @@ import image8 from '../src/assets/images/locations/LA_BASTIDE.png';
 import image9 from '../src/assets/images/locations/LE_BASTIDON.png';
 import image10 from '../src/assets/images/locations/LAVANDIER.png';
 import image11 from '../src/assets/images/locations/DIGITAL_COTTAGE.png';
+import image12 from '../src/assets/images/locations/CURNIER.jpeg';
 
 const locations = [
     { 
@@ -139,6 +140,18 @@ const locations = [
         person : '2 pers.',
         url: 'https://www.airbnb.fr/rooms/1149419583963114909?source_impression_id=p3_1717441052_P3uFMLS1iwFueWe9',
         urlImg: image11, 
+        alt: 'Nature', 
+        category: '2/4 pers.',
+        exterior: ''
+    },
+    { 
+        id: 12,
+        name: 'Curnier',
+        text: 'Bienvenue dans notre petite maison de village, idéale pour un couple et un enfant, située dans les magnifiques Baronnies provençales, au sud de la France dans le charmant village de CURNIER (10 min. de Nyons).<br>La maison entièrement rénovée vous offre un confort exceptionnel et une atmosphère chaleureuse grâce à son mobilier neuf et sa décoration soignée.',
+        location : 'Curnier',
+        person : '3 pers.',
+        url: 'https://www.airbnb.fr/rooms/1214412037651754414?source_impression_id=p3_1724178463_P3-UO62K8gKk5Nfj',
+        urlImg: image12, 
         alt: 'Nature', 
         category: '2/4 pers.',
         exterior: ''
